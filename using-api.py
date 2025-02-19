@@ -2,7 +2,7 @@ import requests
 import json
 
 API_URL = "https://api-inference.huggingface.co/models/Salesforce/blip-image-captioning-base"
-HEADERS = {"Authorization": "your-api-key"}
+HEADERS = {"Authorization": "Bearer your-hugging-face-api"}
 
 def query_image(image_path):
     with open(image_path, "rb") as img:
